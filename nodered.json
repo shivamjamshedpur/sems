@@ -1,0 +1,2244 @@
+[
+    {
+        "id": "306a94028ae5880b",
+        "type": "tab",
+        "label": "wireless",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bda53074e219d893",
+        "type": "tab",
+        "label": "blynk data parcer",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46617381605ff3b3",
+        "type": "tab",
+        "label": "test ground",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bb3d99b9034c6eee",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "97dbee877c208a1e",
+        "type": "tab",
+        "label": "enery meter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f2fc75cf0ab132d",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "87f20b9fe1081632",
+        "type": "blynk-api-client",
+        "name": "task-a",
+        "api": "http://localhost:8080/",
+        "path": "ws://localhost:8080/websockets",
+        "key": "VF4IqOF1uFVT6IOaAm0VzRXo8Y3E1bus"
+    },
+    {
+        "id": "e4eac6450f9f8455",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "81bceaef7ae22f6e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Trebuchet MS,Helvetica,sans-serif",
+                "edited": false,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b7930",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a1c12e70.f6c6b8",
+        "type": "MySQLdatabase",
+        "name": "MariaDB Connection",
+        "host": "localhost",
+        "port": "3306",
+        "db": "atm_service",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "bbc7dd108bf4b9e6",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "e4eac6450f9f8455",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ui_tab_main",
+        "type": "ui_tab",
+        "name": "Energy Dashboard",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "ui_group_main",
+        "type": "ui_group",
+        "name": "Energy Dashboard",
+        "tab": "ui_tab_main",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false
+    },
+    {
+        "id": "9bb340a2b30ac29c",
+        "type": "ui_spacer",
+        "z": "97dbee877c208a1e",
+        "name": "spacer",
+        "group": "ui_group_main",
+        "order": 11,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "6ae28b2c16f42282",
+        "type": "ui_spacer",
+        "z": "97dbee877c208a1e",
+        "name": "spacer",
+        "group": "ui_group_main",
+        "order": 12,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "4b8325c8a949506e",
+        "type": "serial in",
+        "z": "306a94028ae5880b",
+        "name": "serial",
+        "serial": "1f2fc75cf0ab132d",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "6bb732d92299afda",
+                "66822cc7d38e14cc"
+            ]
+        ]
+    },
+    {
+        "id": "6bb732d92299afda",
+        "type": "switch",
+        "z": "306a94028ae5880b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "!4840C146CB7010",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "!4040C146CB7010",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "2715e1dfee2378b1"
+            ],
+            [
+                "6b03e8d10fa6a7f5"
+            ]
+        ]
+    },
+    {
+        "id": "2715e1dfee2378b1",
+        "type": "change",
+        "z": "306a94028ae5880b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 40,
+        "wires": [
+            [
+                "c552d763063b6f18",
+                "30159c2e676a5539"
+            ]
+        ]
+    },
+    {
+        "id": "6b03e8d10fa6a7f5",
+        "type": "change",
+        "z": "306a94028ae5880b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "c552d763063b6f18",
+                "30159c2e676a5539"
+            ]
+        ]
+    },
+    {
+        "id": "ab4132065ff14dc4",
+        "type": "blynk-api-in-write",
+        "z": "306a94028ae5880b",
+        "name": "bell",
+        "pin": "10",
+        "pin_type": "V",
+        "pin_all": 0,
+        "client": "87f20b9fe1081632",
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "30159c2e676a5539"
+            ]
+        ]
+    },
+    {
+        "id": "c552d763063b6f18",
+        "type": "blynk-api-out-write",
+        "z": "306a94028ae5880b",
+        "name": "bell notify",
+        "type_connect": "ws",
+        "pin_type": "V",
+        "pin": "11",
+        "client": "87f20b9fe1081632",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "30159c2e676a5539",
+        "type": "exec",
+        "z": "306a94028ae5880b",
+        "command": "mpg123 1.mp3",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 740,
+        "y": 80,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "66822cc7d38e14cc",
+        "type": "debug",
+        "z": "306a94028ae5880b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c25f85cc80c6917b",
+        "type": "blynk-api-out-write",
+        "z": "bda53074e219d893",
+        "name": "battry percentage",
+        "type_connect": "api",
+        "pin_type": "V",
+        "pin": "20",
+        "client": "87f20b9fe1081632",
+        "x": 810,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b6a12447f646ce1c",
+        "type": "function",
+        "z": "bda53074e219d893",
+        "name": "Voltage to %",
+        "func": "let voltage = parseFloat(msg.payload[0]);\nlet percentage = ((voltage - 11.4) / (13.1 - 11.4)) * 100;\npercentage = Math.max(0, Math.min(100, percentage)); // Clamp 0-100\nmsg.payload = percentage.toFixed(1);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "c25f85cc80c6917b",
+                "8f503f75c3cf4894"
+            ]
+        ]
+    },
+    {
+        "id": "8f503f75c3cf4894",
+        "type": "ui_gauge",
+        "z": "bda53074e219d893",
+        "name": "",
+        "group": "bbc7dd108bf4b9e6",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "battery",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ee1bd58d2526a90c",
+        "type": "blynk-api-in-write",
+        "z": "bda53074e219d893",
+        "name": "01 pin example",
+        "pin": "21",
+        "pin_type": "V",
+        "pin_all": 0,
+        "client": "87f20b9fe1081632",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "49f5cf68d50723e3"
+            ]
+        ]
+    },
+    {
+        "id": "6bf6d1de2404844b",
+        "type": "http request",
+        "z": "bda53074e219d893",
+        "name": "digital pin d2 0",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/D2?value=0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a388946895691d40",
+        "type": "http request",
+        "z": "bda53074e219d893",
+        "name": "digital pin d2 1",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/D2?value=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 500,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49f5cf68d50723e3",
+        "type": "switch",
+        "z": "bda53074e219d893",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "6bf6d1de2404844b"
+            ],
+            [
+                "a388946895691d40"
+            ]
+        ]
+    },
+    {
+        "id": "e30a62760490c059",
+        "type": "http request",
+        "z": "bda53074e219d893",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V10",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "1c8b8d06dc1e79d2"
+            ]
+        ]
+    },
+    {
+        "id": "1c8b8d06dc1e79d2",
+        "type": "json",
+        "z": "bda53074e219d893",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "b6a12447f646ce1c"
+            ]
+        ]
+    },
+    {
+        "id": "8ee5af95681c1de5",
+        "type": "inject",
+        "z": "bda53074e219d893",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "e30a62760490c059"
+            ]
+        ]
+    },
+    {
+        "id": "dbb5155c641f9c18",
+        "type": "ui_template",
+        "z": "bda53074e219d893",
+        "group": "",
+        "name": "Dashboard Styling",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap\" rel=\"stylesheet\">\n\n<style>\nbody, md-content, .nr-dashboard-theme {\n    background-color: #000000 !important;\n    background-image: linear-gradient(#00f0ff33 1px, transparent 1px), \n                      linear-gradient(90deg, #00f0ff33 1px, transparent 1px);\n    background-size: 50px 50px;\n    animation: moveGrid 10s linear infinite;\n    color: #00f0ff !important;\n    font-family: 'Orbitron', sans-serif;\n}\n\n/* Animate the background grid */\n@keyframes moveGrid {\n    0% {\n        background-position: 0 0;\n    }\n    100% {\n        background-position: 50px 50px;\n    }\n}\n\n/* Card Panels */\n.nr-dashboard-cardpanel, .md-card {\n    background-color: rgba(10, 10, 35, 0.8) !important;\n    border: 1px solid #00f0ff !important;\n    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff inset !important;\n    border-radius: 10px;\n}\n\n/* Buttons */\n.md-button {\n    background-color: transparent !important;\n    color: #00f0ff !important;\n    border: 2px solid #00f0ff !important;\n    border-radius: 5px;\n    box-shadow: 0 0 5px #00f0ff;\n}\n\n.md-button:hover {\n    background-color: #00f0ff !important;\n    color: #000000 !important;\n}\n\n/* Texts */\nh1, h2, h3, label, p, span {\n    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;\n}\n\n</style>\n<style>\n\n\nmd-card, .md-card {\n    background: transparent !important;\n    box-shadow: none !important;\n    border: none !important;\n}\n\nmd-card > .md-card-content, .md-card-content {\n    padding: 0px !important;\n    margin: 0px !important;\n}\n</style>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap\" rel=\"stylesheet\">\n\n<style>\n<style>\n#animated-grid-background {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1; /* Behind all other elements */\n    background-color: #000000;\n    background-image: \n        linear-gradient(#00f0ff33 1px, transparent 1px),\n        linear-gradient(90deg, #00f0ff33 1px, transparent 1px);\n    background-size: 50px 50px;\n    animation: moveGrid 10s linear infinite;\n}\n\n/* Animate the background grid */\n@keyframes moveGrid {\n    0% {\n        background-position: 0 0;\n    }\n    100% {\n        background-position: 50px 50px;\n    }\n}\n\n/* Optional: Style the dashboard and cards */\n.nr-dashboard-theme {\n    background: transparent !important;\n    color: #00f0ff !important;\n    font-family: 'Orbitron', sans-serif;\n}\n\n.nr-dashboard-cardpanel, .md-card {\n    background-color: rgba(10, 10, 35, 0.8) !important;\n    border: 1px solid #00f0ff !important;\n    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff inset !important;\n    border-radius: 10px;\n}\n\n.md-button {\n    background-color: transparent !important;\n    color: #00f0ff !important;\n    border: 2px solid #00f0ff !important;\n    border-radius: 5px;\n    box-shadow: 0 0 5px #00f0ff;\n}\n\n.md-button:hover {\n    background-color: #00f0ff !important;\n    color: #000000 !important;\n}\n\nh1, h2, h3, label, p, span {\n    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "blynk_http_get",
+        "type": "http request",
+        "z": "46617381605ff3b3",
+        "name": "Get Blynk V1",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V10",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "json_node"
+            ]
+        ]
+    },
+    {
+        "id": "json_node",
+        "type": "json",
+        "z": "46617381605ff3b3",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "calc_percent"
+            ]
+        ]
+    },
+    {
+        "id": "calc_percent",
+        "type": "function",
+        "z": "46617381605ff3b3",
+        "name": "Voltage to %",
+        "func": "let voltage = parseFloat(msg.payload[0]);\nlet percentage = ((voltage - 11.4) / (13.5 - 11.4)) * 100;\npercentage = Math.max(0, Math.min(100, percentage)); // Clamp 0-100\nmsg.payload = percentage.toFixed(1) + \"%\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "debug_output"
+            ]
+        ]
+    },
+    {
+        "id": "inject_trigger",
+        "type": "inject",
+        "z": "46617381605ff3b3",
+        "name": "Repeat every 30s",
+        "props": [],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "blynk_http_get"
+            ]
+        ]
+    },
+    {
+        "id": "debug_output",
+        "type": "debug",
+        "z": "46617381605ff3b3",
+        "name": "Battery %",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "73560ebc90ad3301",
+        "type": "blynk-api-in-write",
+        "z": "46617381605ff3b3",
+        "name": "01 pin example",
+        "pin": "21",
+        "pin_type": "V",
+        "pin_all": 0,
+        "client": "87f20b9fe1081632",
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "bbdaf67230f63d8c"
+            ]
+        ]
+    },
+    {
+        "id": "109799e5f318413a",
+        "type": "http request",
+        "z": "46617381605ff3b3",
+        "name": "digital pin d2 0",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/D2?value=0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 580,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59252c1752451980",
+        "type": "http request",
+        "z": "46617381605ff3b3",
+        "name": "digital pin d2 1",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/D2?value=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 580,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbdaf67230f63d8c",
+        "type": "switch",
+        "z": "46617381605ff3b3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "109799e5f318413a"
+            ],
+            [
+                "59252c1752451980"
+            ]
+        ]
+    },
+    {
+        "id": "1f7f3acb.c6a4a5",
+        "type": "http in",
+        "z": "bb3d99b9034c6eee",
+        "name": "Upload CSV Endpoint",
+        "url": "/upload-csv",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "c25cd089.8de13"
+            ]
+        ]
+    },
+    {
+        "id": "c25cd089.8de13",
+        "type": "csv",
+        "z": "bb3d99b9034c6eee",
+        "name": "Parse CSV",
+        "sep": ",",
+        "hdrin": true,
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "23b09e6a.6c271a"
+            ]
+        ]
+    },
+    {
+        "id": "23b09e6a.6c271a",
+        "type": "function",
+        "z": "bb3d99b9034c6eee",
+        "name": "Prepare Insert Query",
+        "func": "msg.topic = \"INSERT INTO atm_services (service, customer_bank, atm_id, atm_id_ii, atm_id_iii, old_atm_id, address, city, state, zone, css_branch, ip_address, password, dvr_name, css_bm_name, service_executive, engineer_name) VALUES ?\";\n\nlet rows = msg.payload.map(row => [\n    row.service,\n    row.customer_bank,\n    row.atm_id,\n    row.atm_id_ii,\n    row.atm_id_iii,\n    row.old_atm_id,\n    row.address,\n    row.city,\n    row.state,\n    row.zone,\n    row.css_branch,\n    row.ip_address,\n    row.password,\n    row.dvr_name,\n    row.css_bm_name,\n    row.service_executive,\n    row.engineer_name\n]);\n\nmsg.payload = [rows];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 220,
+        "wires": [
+            [
+                "289eea15.c81226"
+            ]
+        ]
+    },
+    {
+        "id": "289eea15.c81226",
+        "type": "mysql",
+        "z": "bb3d99b9034c6eee",
+        "mydb": "a1c12e70.f6c6b8",
+        "name": "MariaDB",
+        "x": 750,
+        "y": 220,
+        "wires": [
+            [
+                "91e31708.91c758",
+                "11d6d973c9260c01"
+            ]
+        ]
+    },
+    {
+        "id": "91e31708.91c758",
+        "type": "http response",
+        "z": "bb3d99b9034c6eee",
+        "name": "Send Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d3d5eb8b.3e41c8",
+        "type": "http in",
+        "z": "bb3d99b9034c6eee",
+        "name": "CSV Upload UI",
+        "url": "/upload-form",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "34aab2e6.08fd7e"
+            ]
+        ]
+    },
+    {
+        "id": "34aab2e6.08fd7e",
+        "type": "template",
+        "z": "bb3d99b9034c6eee",
+        "name": "HTML Form",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Upload CSV</title>\n</head>\n<body>\n  <h2>Upload CSV File</h2>\n  <form action=\"/upload-csv\" method=\"post\" enctype=\"multipart/form-data\">\n    <input type=\"file\" name=\"file\" />\n    <input type=\"submit\" value=\"Upload CSV\" />\n  </form>\n</body>\n</html>",
+        "output": "str",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "8ea74991.3e3f88"
+            ]
+        ]
+    },
+    {
+        "id": "8ea74991.3e3f88",
+        "type": "http response",
+        "z": "bb3d99b9034c6eee",
+        "name": "Send Upload Form",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "11d6d973c9260c01",
+        "type": "http response",
+        "z": "bb3d99b9034c6eee",
+        "d": true,
+        "name": "Send HTML",
+        "statusCode": "",
+        "headers": {},
+        "x": 890,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aaedf8b15f4dc046",
+        "type": "debug",
+        "z": "bb3d99b9034c6eee",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3db87a07abf3f9b7",
+        "type": "http in",
+        "z": "bb3d99b9034c6eee",
+        "name": "View DB Data",
+        "url": "/list-db",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "6dbf7c128a9e15cd"
+            ]
+        ]
+    },
+    {
+        "id": "6dbf7c128a9e15cd",
+        "type": "function",
+        "z": "bb3d99b9034c6eee",
+        "name": "SQL Query",
+        "func": "msg.topic = \"SELECT * FROM atm_services ORDER BY id DESC\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "42e390239b6de297"
+            ]
+        ]
+    },
+    {
+        "id": "42e390239b6de297",
+        "type": "mysql",
+        "z": "bb3d99b9034c6eee",
+        "mydb": "a1c12e70.f6c6b8",
+        "name": "MariaDB",
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "aaedf8b15f4dc046"
+            ]
+        ]
+    },
+    {
+        "id": "4fd77878181636f3",
+        "type": "inject",
+        "z": "bb3d99b9034c6eee",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "6dbf7c128a9e15cd"
+            ]
+        ]
+    },
+    {
+        "id": "dashboard_setup",
+        "type": "ui_template",
+        "z": "97dbee877c208a1e",
+        "group": "",
+        "name": "Dashboard Styling",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap\" rel=\"stylesheet\">\n\n<style>\nbody, md-content, .nr-dashboard-theme {\n    background-color: #000000 !important;\n    background-image: linear-gradient(#00f0ff33 1px, transparent 1px), \n                      linear-gradient(90deg, #00f0ff33 1px, transparent 1px);\n    background-size: 50px 50px;\n    animation: moveGrid 10s linear infinite;\n    color: #00f0ff !important;\n    font-family: 'Orbitron', sans-serif;\n}\n\n/* Animate the background grid */\n@keyframes moveGrid {\n    0% {\n        background-position: 0 0;\n    }\n    100% {\n        background-position: 50px 50px;\n    }\n}\n\n/* Card Panels */\n.nr-dashboard-cardpanel, .md-card {\n    background-color: rgba(10, 10, 35, 0.8) !important;\n    border: 1px solid #00f0ff !important;\n    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff inset !important;\n    border-radius: 10px;\n}\n\n/* Buttons */\n.md-button {\n    background-color: transparent !important;\n    color: #00f0ff !important;\n    border: 2px solid #00f0ff !important;\n    border-radius: 5px;\n    box-shadow: 0 0 5px #00f0ff;\n}\n\n.md-button:hover {\n    background-color: #00f0ff !important;\n    color: #000000 !important;\n}\n\n/* Texts */\nh1, h2, h3, label, p, span {\n    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;\n}\n\n</style>\n<style>\n\n\nmd-card, .md-card {\n    background: transparent !important;\n    box-shadow: none !important;\n    border: none !important;\n}\n\nmd-card > .md-card-content, .md-card-content {\n    padding: 0px !important;\n    margin: 0px !important;\n}\n</style>\n<link href=\"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap\" rel=\"stylesheet\">\n\n<style>\n<style>\n#animated-grid-background {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1; /* Behind all other elements */\n    background-color: #000000;\n    background-image: \n        linear-gradient(#00f0ff33 1px, transparent 1px),\n        linear-gradient(90deg, #00f0ff33 1px, transparent 1px);\n    background-size: 50px 50px;\n    animation: moveGrid 10s linear infinite;\n}\n\n/* Animate the background grid */\n@keyframes moveGrid {\n    0% {\n        background-position: 0 0;\n    }\n    100% {\n        background-position: 50px 50px;\n    }\n}\n\n/* Optional: Style the dashboard and cards */\n.nr-dashboard-theme {\n    background: transparent !important;\n    color: #00f0ff !important;\n    font-family: 'Orbitron', sans-serif;\n}\n\n.nr-dashboard-cardpanel, .md-card {\n    background-color: rgba(10, 10, 35, 0.8) !important;\n    border: 1px solid #00f0ff !important;\n    box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff inset !important;\n    border-radius: 10px;\n}\n\n.md-button {\n    background-color: transparent !important;\n    color: #00f0ff !important;\n    border: 2px solid #00f0ff !important;\n    border-radius: 5px;\n    box-shadow: 0 0 5px #00f0ff;\n}\n\n.md-button:hover {\n    background-color: #00f0ff !important;\n    color: #000000 !important;\n}\n\nh1, h2, h3, label, p, span {\n    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 510,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "mains_voltage",
+        "type": "ui_gauge",
+        "z": "97dbee877c208a1e",
+        "name": "Mains current",
+        "group": "ui_group_main",
+        "order": 2,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Mains Current",
+        "label": "Amps",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "25",
+        "colors": [
+            "#ff0000",
+            "#00ff00",
+            "#00d4ff"
+        ],
+        "seg1": "200",
+        "seg2": "250",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "mains_current",
+        "type": "ui_gauge",
+        "z": "97dbee877c208a1e",
+        "name": "Mains Power",
+        "group": "ui_group_main",
+        "order": 3,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Mains Power",
+        "label": "Watts",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3000",
+        "colors": [
+            "#ff0000",
+            "#00ff00",
+            "#00d4ff"
+        ],
+        "seg1": "30",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "mains_power",
+        "type": "ui_gauge",
+        "z": "97dbee877c208a1e",
+        "name": "Mains voltage",
+        "group": "ui_group_main",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "Mains voltage",
+        "label": "Volts",
+        "format": "{{value | number:0}}",
+        "min": "80",
+        "max": "260",
+        "colors": [
+            "#ff0000",
+            "#00ff00",
+            "#00d4ff"
+        ],
+        "seg1": "5000",
+        "seg2": "8000",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "mains_frequency",
+        "type": "ui_text",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "order": 5,
+        "width": 4,
+        "height": 3,
+        "name": "Mains Frequency",
+        "label": "Mains Frequency",
+        "format": "{{msg.payload }} Hz",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d7bfe8ea7f4b83c8",
+        "type": "blynk-api-out-write",
+        "z": "97dbee877c208a1e",
+        "name": "battry percentage to app",
+        "type_connect": "api",
+        "pin_type": "V",
+        "pin": "20",
+        "client": "87f20b9fe1081632",
+        "x": 910,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bb16edccb2359183",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "Voltage to %",
+        "func": "let voltage = parseFloat(msg.payload[0]);\nlet percentage = ((voltage - 11.4) / (13.1 - 11.4)) * 100;\npercentage = Math.max(0, Math.min(100, percentage)); // Clamp 0-100\nmsg.payload = percentage.toFixed(1);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [
+                "d7bfe8ea7f4b83c8",
+                "71d6ebc42b332bbd",
+                "c10643693c6e0d61"
+            ]
+        ]
+    },
+    {
+        "id": "c512f0ea33cd7730",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V10",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "9dd12936654f77b4"
+            ]
+        ]
+    },
+    {
+        "id": "9dd12936654f77b4",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "bb16edccb2359183"
+            ]
+        ]
+    },
+    {
+        "id": "dc9753780e87971d",
+        "type": "inject",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "c512f0ea33cd7730",
+                "16f7ba5da65ebfcf",
+                "8aa65f43ada0dfc0",
+                "65fe56775b70db3d",
+                "e362015903d9ada2",
+                "91e12f9df3a5ec04",
+                "2ffee6ac16ac9e64",
+                "7b29db75bd12cc5e"
+            ]
+        ]
+    },
+    {
+        "id": "16f7ba5da65ebfcf",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V21",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "9aa04016aa5775c4"
+            ]
+        ]
+    },
+    {
+        "id": "9aa04016aa5775c4",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "voltage",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "mains_power"
+            ]
+        ]
+    },
+    {
+        "id": "8aa65f43ada0dfc0",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V22",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "5eb11bec37c01d29"
+            ]
+        ]
+    },
+    {
+        "id": "5eb11bec37c01d29",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "mains_voltage"
+            ]
+        ]
+    },
+    {
+        "id": "65fe56775b70db3d",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V23",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "d692ab4ec3b27bbb"
+            ]
+        ]
+    },
+    {
+        "id": "d692ab4ec3b27bbb",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "mains_current"
+            ]
+        ]
+    },
+    {
+        "id": "e362015903d9ada2",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V25",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "74991be2296354e0"
+            ]
+        ]
+    },
+    {
+        "id": "74991be2296354e0",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 260,
+        "wires": [
+            [
+                "73ccfd618789e404"
+            ]
+        ]
+    },
+    {
+        "id": "91e12f9df3a5ec04",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V26",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "e962a8c5c564d8e5"
+            ]
+        ]
+    },
+    {
+        "id": "e962a8c5c564d8e5",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "20c06e87482b55af"
+            ]
+        ]
+    },
+    {
+        "id": "71d6ebc42b332bbd",
+        "type": "ui_gauge",
+        "z": "97dbee877c208a1e",
+        "name": "battery backup",
+        "group": "ui_group_main",
+        "order": 4,
+        "width": 5,
+        "height": 5,
+        "gtype": "donut",
+        "title": "battery backup",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#d4d3d3",
+            "#00ff00",
+            "#ff0000"
+        ],
+        "seg1": "200",
+        "seg2": "250",
+        "diff": false,
+        "className": "",
+        "x": 900,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "aeb7175dce6236bb",
+        "type": "ui_text",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "order": 7,
+        "width": 4,
+        "height": 3,
+        "name": "Mains Frequency",
+        "label": "powerfactor",
+        "format": "{{msg.payload }}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 830,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2ffee6ac16ac9e64",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V24",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "c5e7baa708fb8dc3"
+            ]
+        ]
+    },
+    {
+        "id": "150333cc20882ac3",
+        "type": "ui_text",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "order": 6,
+        "width": 6,
+        "height": 3,
+        "name": "energy",
+        "label": "energy consumption",
+        "format": "{{msg.payload }} units",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 810,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4c26d1f78cb23022",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "function 1",
+        "func": "if (Array.isArray(msg.payload)) {\n    msg.payload = parseFloat(msg.payload[0]).toFixed(3);\n} else {\n    msg.payload = parseFloat(msg.payload).toFixed(3);\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 340,
+        "wires": [
+            [
+                "150333cc20882ac3",
+                "ea1e3a5a56ff97f1"
+            ]
+        ]
+    },
+    {
+        "id": "20c06e87482b55af",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "function 2",
+        "func": "if (Array.isArray(msg.payload)) {\n    msg.payload = parseFloat(msg.payload[0]).toFixed(3);\n} else {\n    msg.payload = parseFloat(msg.payload).toFixed(3);\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "aeb7175dce6236bb"
+            ]
+        ]
+    },
+    {
+        "id": "73ccfd618789e404",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "function 3",
+        "func": "if (Array.isArray(msg.payload)) {\n    msg.payload = parseFloat(msg.payload[0]).toFixed(2);\n} else {\n    msg.payload = parseFloat(msg.payload).toFixed(2);\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "mains_frequency"
+            ]
+        ]
+    },
+    {
+        "id": "3cf7fccd0d866709",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/V36?value=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 850,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7fceab60f136d35",
+        "type": "switch",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 780,
+        "wires": [
+            [
+                "3cf7fccd0d866709"
+            ]
+        ]
+    },
+    {
+        "id": "2d71b4ec92be5308",
+        "type": "switch",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 840,
+        "wires": [
+            [
+                "9e9b5a6eeadd69f7"
+            ]
+        ]
+    },
+    {
+        "id": "9e9b5a6eeadd69f7",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/V36?value=0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 850,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27af2ef24316329a",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/V37?value=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46da765c5eda50b8",
+        "type": "switch",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 780,
+        "wires": [
+            [
+                "27af2ef24316329a"
+            ]
+        ]
+    },
+    {
+        "id": "d239e5110bce3306",
+        "type": "switch",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 250,
+        "y": 840,
+        "wires": [
+            [
+                "63af370a85847c10"
+            ]
+        ]
+    },
+    {
+        "id": "63af370a85847c10",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/update/V37?value=0",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8f9b7c2.3a4d58",
+        "type": "ui_template",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "name": "zone 1",
+        "order": 9,
+        "width": 3,
+        "height": 3,
+        "format": "<style>\n.switch {\n  display: block;\n  background-color: black;\n  width: 100px;\n  height: 130px;\n  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 0 1px 2px black, inset 0 2px 2px -2px white, inset 0 0 2px 10px #47434c, inset 0 0 2px 15px black;\n  border-radius: 5px;\n  padding: 15px;\n  perspective: 700px;\n}\n.switch input {\n  display: none;\n}\n.switch input:checked + .button {\n  transform: translateZ(20px) rotateX(25deg);\n  box-shadow: 0 -10px 20px #ff1818;\n}\n.switch input:checked + .button .light {\n  animation: flicker 0.2s infinite 0.3s;\n}\n.switch input:checked + .button .shine {\n  opacity: 1;\n}\n.switch input:checked + .button .shadow {\n  opacity: 0;\n}\n.switch .button {\n  display: block;\n  transition: all 0.3s cubic-bezier(1, 0, 1, 1);\n  transform-origin: center center -20px;\n  transform: translateZ(20px) rotateX(-25deg);\n  transform-style: preserve-3d;\n  background-color: #9b0621;\n  height: 100%;\n  position: relative;\n  cursor: pointer;\n  background: linear-gradient(#980000 0%, #6f0000 30%, #6f0000 70%, #980000 100%);\n}\n.switch .button::before {\n  content: \"\";\n  background: linear-gradient(rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.3) 30%, #650000 75%, #320000) 50% 50%/97% 97%, #b10000;\n  width: 100%;\n  height: 35px;\n  transform-origin: top;\n  transform: rotateX(-90deg);\n  position: absolute;\n  top: 0;\n}\n.switch .button::after {\n  content: \"\";\n  background-image: linear-gradient(#650000, #320000);\n  width: 100%;\n  height: 35px;\n  transform-origin: top;\n  transform: translateY(35px) rotateX(-90deg);\n  position: absolute;\n  bottom: 0;\n  box-shadow: 0 35px 8px 0px black, 0 60px 20px 0px rgba(0, 0, 0, 0.5);\n}\n@keyframes flicker {\n  0% { opacity: 1; }\n  50% { opacity: 0.8; }\n  100% { opacity: 1; }\n}\n.light, .shine, .shadow {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.light {\n  background: radial-gradient(#ff5555, transparent 50%);\n  opacity: 0;\n}\n.shine {\n  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent 30%);\n  opacity: 0.5;\n}\n.shadow {\n  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent 30%);\n  opacity: 1;\n}\n</style>\n<label class=\"switch\" role=\"switch\" aria-checked=\"false\">\n  <input type=\"checkbox\" ng-model=\"switchValue\" ng-change=\"send({payload: switchValue})\" aria-hidden=\"true\">\n  <span class=\"button\">\n    <span class=\"light\"></span>\n    <span class=\"shine\"></span>\n    <span class=\"shadow\"></span>\n  </span>\n</label>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 110,
+        "y": 800,
+        "wires": [
+            [
+                "46da765c5eda50b8",
+                "d239e5110bce3306"
+            ]
+        ]
+    },
+    {
+        "id": "c40a7fe8191410e4",
+        "type": "ui_template",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "name": "zone 2",
+        "order": 8,
+        "width": 3,
+        "height": 3,
+        "format": "<style>\n.switch {\n  display: block;\n  background-color: black;\n  width: 100px;\n  height: 130px;\n  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 0 1px 2px black, inset 0 2px 2px -2px white, inset 0 0 2px 10px #47434c, inset 0 0 2px 15px black;\n  border-radius: 5px;\n  padding: 15px;\n  perspective: 700px;\n}\n.switch input {\n  display: none;\n}\n.switch input:checked + .button {\n  transform: translateZ(20px) rotateX(25deg);\n  box-shadow: 0 -10px 20px #ff1818;\n}\n.switch input:checked + .button .light {\n  animation: flicker 0.2s infinite 0.3s;\n}\n.switch input:checked + .button .shine {\n  opacity: 1;\n}\n.switch input:checked + .button .shadow {\n  opacity: 0;\n}\n.switch .button {\n  display: block;\n  transition: all 0.3s cubic-bezier(1, 0, 1, 1);\n  transform-origin: center center -20px;\n  transform: translateZ(20px) rotateX(-25deg);\n  transform-style: preserve-3d;\n  background-color: #9b0621;\n  height: 100%;\n  position: relative;\n  cursor: pointer;\n  background: linear-gradient(#980000 0%, #6f0000 30%, #6f0000 70%, #980000 100%);\n}\n.switch .button::before {\n  content: \"\";\n  background: linear-gradient(rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.3) 30%, #650000 75%, #320000) 50% 50%/97% 97%, #b10000;\n  width: 100%;\n  height: 35px;\n  transform-origin: top;\n  transform: rotateX(-90deg);\n  position: absolute;\n  top: 0;\n}\n.switch .button::after {\n  content: \"\";\n  background-image: linear-gradient(#650000, #320000);\n  width: 100%;\n  height: 35px;\n  transform-origin: top;\n  transform: translateY(35px) rotateX(-90deg);\n  position: absolute;\n  bottom: 0;\n  box-shadow: 0 35px 8px 0px black, 0 60px 20px 0px rgba(0, 0, 0, 0.5);\n}\n@keyframes flicker {\n  0% { opacity: 1; }\n  50% { opacity: 0.8; }\n  100% { opacity: 1; }\n}\n.light, .shine, .shadow {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.light {\n  background: radial-gradient(#ff5555, transparent 50%);\n  opacity: 0;\n}\n.shine {\n  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent 30%);\n  opacity: 0.5;\n}\n.shadow {\n  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent 30%);\n  opacity: 1;\n}\n</style>\n<label class=\"switch\" role=\"switch\" aria-checked=\"false\">\n  <input type=\"checkbox\" ng-model=\"switchValue\" ng-change=\"send({payload: switchValue})\" aria-hidden=\"true\">\n  <span class=\"button\">\n    <span class=\"light\"></span>\n    <span class=\"shine\"></span>\n    <span class=\"shadow\"></span>\n  </span>\n</label>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 800,
+        "wires": [
+            [
+                "b7fceab60f136d35",
+                "2d71b4ec92be5308"
+            ]
+        ]
+    },
+    {
+        "id": "2099e78e8d6be09d",
+        "type": "ui_slider",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "label": "performance ",
+        "tooltip": "",
+        "group": "ui_group_main",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 270,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c10643693c6e0d61",
+        "type": "ui_level",
+        "z": "97dbee877c208a1e",
+        "group": "ui_group_main",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": 0,
+        "max": 100,
+        "segWarn": "",
+        "segHigh": "",
+        "unit": "",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 910,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "67ad8cdb2c0f6614",
+        "type": "blynk-api-out-write",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "type_connect": "api",
+        "pin_type": "V",
+        "pin": 0,
+        "client": "87f20b9fe1081632",
+        "x": 860,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7b29db75bd12cc5e",
+        "type": "blynk-api-out-read",
+        "z": "97dbee877c208a1e",
+        "name": "read",
+        "type_connect": "api",
+        "pin_type": "V",
+        "pin": "0",
+        "client": "87f20b9fe1081632",
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "bf65f1f9e9469a0f"
+            ]
+        ]
+    },
+    {
+        "id": "b18971e6589fc423",
+        "type": "inject",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "083c9b9159e1214a"
+            ]
+        ]
+    },
+    {
+        "id": "083c9b9159e1214a",
+        "type": "http request",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.22.113:8080/dyyqjCuZCtTym54uGsvdtFgmT7ZR_Hq2/get/V24",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "9f52e9f9e73e9bc6"
+            ]
+        ]
+    },
+    {
+        "id": "9f52e9f9e73e9bc6",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 550,
+        "y": 640,
+        "wires": [
+            [
+                "08afa350eab7caa1"
+            ]
+        ]
+    },
+    {
+        "id": "08afa350eab7caa1",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "function 4",
+        "func": "if (Array.isArray(msg.payload)) {\n    msg.payload = parseFloat(msg.payload[0]).toFixed(3);\n} else {\n    msg.payload = parseFloat(msg.payload).toFixed(3);\n}\nreturn msg;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 640,
+        "wires": [
+            [
+                "67ad8cdb2c0f6614"
+            ]
+        ]
+    },
+    {
+        "id": "c5e7baa708fb8dc3",
+        "type": "json",
+        "z": "97dbee877c208a1e",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "4c26d1f78cb23022"
+            ]
+        ]
+    },
+    {
+        "id": "ea1e3a5a56ff97f1",
+        "type": "change",
+        "z": "97dbee877c208a1e",
+        "name": "Set topic a",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "a",
+                "tot": "str"
+            }
+        ],
+        "x": 430,
+        "y": 510,
+        "wires": [
+            [
+                "b77b4b067c8e4fbd"
+            ]
+        ]
+    },
+    {
+        "id": "bf65f1f9e9469a0f",
+        "type": "change",
+        "z": "97dbee877c208a1e",
+        "name": "Set topic b",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "b",
+                "tot": "str"
+            }
+        ],
+        "x": 430,
+        "y": 570,
+        "wires": [
+            [
+                "b77b4b067c8e4fbd"
+            ]
+        ]
+    },
+    {
+        "id": "b77b4b067c8e4fbd",
+        "type": "join",
+        "z": "97dbee877c208a1e",
+        "name": "Join a & b",
+        "mode": "manual",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": true,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 580,
+        "y": 540,
+        "wires": [
+            [
+                "7cfc3f0911cc9612"
+            ]
+        ]
+    },
+    {
+        "id": "7cfc3f0911cc9612",
+        "type": "function",
+        "z": "97dbee877c208a1e",
+        "name": "Subtract a - b",
+        "func": "let a = msg.payload.a;\nlet b = msg.payload.b;\nmsg.payload = a - b;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 540,
+        "wires": [
+            [
+                "b60d413734b6fc5b",
+                "03a1e033466d2330"
+            ]
+        ]
+    },
+    {
+        "id": "b60d413734b6fc5b",
+        "type": "debug",
+        "z": "97dbee877c208a1e",
+        "name": "Result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 910,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "03a1e033466d2330",
+        "type": "blynk-api-out-write",
+        "z": "97dbee877c208a1e",
+        "name": "v1 daily usage",
+        "type_connect": "api",
+        "pin_type": "V",
+        "pin": "1",
+        "client": "87f20b9fe1081632",
+        "x": 920,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a2c69048899f566c",
+        "type": "inject",
+        "z": "97dbee877c208a1e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "03a1e033466d2330"
+            ]
+        ]
+    }
+]
